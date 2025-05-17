@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* Establecer el tamaño de la página y márgenes para impresión */
+@page {
+    size: A4;
+    margin: 20mm; /* Ajuste los márgenes según sea necesario */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.cv-container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+    padding: 20px;
+    page-break-before: always; /* Para que el contenido no se divida en varias páginas */
+}
+
+.cv-header {
+    background: #34495e;
+    color: #333;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 1.8rem;
+    margin: 10px 0 5px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+    .social-links li a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+        transition: opacity 0.3s;
+    }
+
+        .social-links li a:hover {
+            opacity: 0.8;
+        }
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #34495e;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
